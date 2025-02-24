@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"D:\\Cours\\UnrealProjet\\UnrealDemo\\Source\\UnrealDemo\\UnrealDemo.Build.cs",
-		"D:\\Cours\\UnrealProjet\\UnrealDemo\\Source\\UnrealDemo.Target.cs",
-		"D:\\Cours\\UnrealProjet\\UnrealDemo\\Source\\UnrealDemoEditor.Target.cs"
-	],
-	"EngineVersion": "5.4.2"
-}

@@ -42,5 +42,5 @@ void AExoActor::Rotate()
 
 void AExoActor::Scale()
 {
-	SetActorScale3D(GetActorScale3D() + FVector(0.5) * GetWorld()->DeltaTimeSeconds);
+	SetActorScale3D(GetActorScale3D() + FVector(0.2) * GetWorld()->DeltaTimeSeconds);
 }
