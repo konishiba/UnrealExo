@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\cours\\unrealprojet\\unrealdemo\\source\\unrealdemo\\exoactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\cours\\unrealprojet\\unrealdemo\\intermediate\\build\\win64\\x64\\unrealdemoeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "d:\\cours\\unrealprojet\\unrealdemo\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealdemo\\definitions.unrealdemo.h",
+            "d:\\cours\\unrealprojet\\unrealdemo\\source\\unrealdemo\\exoactor.h",
+            "d:\\cours\\unrealprojet\\unrealdemo\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealdemo\\uht\\exoactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
