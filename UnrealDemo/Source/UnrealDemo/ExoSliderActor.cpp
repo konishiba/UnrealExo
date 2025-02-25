@@ -25,42 +25,14 @@ void AExoSliderActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	Tranlate();
-	Scale();
 }
 
 void AExoSliderActor::Tranlate()
 {
+	if (GetActorLocation().X >= distance.X) return;
 	const FVector& _location = FVector(1, 0, 0);
 	SetActorLocation(GetActorLocation() + _location * MoveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
-void AExoSliderActor::CheckSacle()
-{
-	FVector _scale = GetActorScale3D();
-	if (_scale.X >= MaxScale.X)
-	{
-		SetDiscrase(true);
-	}
-	else if (_scale.X <= MinScale.X)
-	{
-		SetDiscrase(false);
-	}
-}
 
-void AExoSliderActor::Scale()
-{
-	CheckSacle();
-	if (!discrase) ScaleUp();
-	else ScaleDown();
-}
-
-void AExoSliderActor::ScaleUp()
-{
-	SetActorScale3D(GetActorScale3D() + FVector(0.5) * GetWorld()->DeltaTimeSeconds);
-}
-
-void AExoSliderActor::ScaleDown()
-{
-	SetActorScale3D(GetActorScale3D() + FVector(-0.5) * GetWorld()->DeltaTimeSeconds);
-}
 

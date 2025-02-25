@@ -10,9 +10,9 @@ UCLASS()
 class UNREALDEMO_API AExoActor : public AActor
 {
 	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, Category = "DemoActor|Components")
+	UPROPERTY(EditAnywhere, Category = "ExoActor|Components")
 	TObjectPtr<UStaticMeshComponent> mesh = nullptr;
-	UPROPERTY(VisibleAnywhere, Category = "DemoActor|Values")
+	UPROPERTY(EditAnywhere, Category = "ExoActor|Values", meta = (UIMin = "1", UIMax = "200", ClampMin = "1", ClampMax = "200"))
 	float RotationSpeed = 100.0f;
 
 public:	

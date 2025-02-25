@@ -37,7 +37,7 @@ void AExoActor::Move()
 
 void AExoActor::Rotate()
 {
-	SetActorRotation(GetActorRotation() + FRotator(0, 1, 0) * RotationSpeed * GetWorld()->DeltaTimeSeconds);
+	AddActorWorldRotation(FRotator(1, 1, 1) * RotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void AExoActor::Scale()

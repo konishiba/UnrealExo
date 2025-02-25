@@ -10,16 +10,14 @@ UCLASS()
 class UNREALDEMO_API AExoSliderActor : public AActor
 {
 	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, Category = "DemoActor|Components")
+	UPROPERTY(EditAnywhere, Category = "ExoSliderActor|Components")
 	TObjectPtr<UStaticMeshComponent> mesh = nullptr;
-	UPROPERTY(VisibleAnywhere, Category = "DemoActor|Values")
+	UPROPERTY(VisibleAnywhere, Category = "ExoSliderActor|Values")
 	float MoveSpeed = 100.0f;
-	UPROPERTY(VisibleAnywhere, Category = "DemoActor|Values")
-	bool discrase = false;
-	UPROPERTY(VisibleAnywhere, Category = "DemoActor|Values")
-	FVector MaxScale = FVector(3);
-	UPROPERTY(VisibleAnywhere, Category = "DemoActor|Values")
-	FVector MinScale = FVector(1);
+	UPROPERTY(VisibleAnywhere, Category = "ExoSliderActor|Values")
+	bool canMove = false;
+	UPROPERTY(VisibleAnywhere, Category = "ExoSliderActor|Values")
+	FVector distance = FVector(2000.0,0.0,0.0);
 public:	
 	// Sets default values for this actor's properties
 	AExoSliderActor();
@@ -32,16 +30,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	FORCEINLINE void SetDiscrase(const bool _discrase)
-	{
-		discrase = _discrase;
-	}
-
 	void Tranlate();
 
-	void CheckSacle();
-
-	void Scale();
-	void ScaleUp();
-	void ScaleDown();
 };
