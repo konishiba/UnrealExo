@@ -15,6 +15,7 @@ class UNREALDEMO_API APlatformHomeActor : public AActor
 
 	UPROPERTY(EditAnywhere, Category = "PlatformHomeActor|Movement")
 	FVector start = FVector::ZeroVector;
+
 	UPROPERTY(EditAnywhere, Category = "PlatformHomeActor|Movement")
 	FVector destination = FVector::ZeroVector;
 
